@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Horse Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+  </head>
+  <body onLoad="init(), check()">  
+	
+	<div id="menu" class="visible">
+	  <div class="title">
+	    Horse Course
+	  </div>
+	  <button id="playGame" class="button" onClick="changeVisibility('menu'), changeVisibility('chooseHorse')">
+	    Play Game
+	  </button>
+	  <button id="showInstructions" class="button" onClick="changeVisibility('menu'), changeVisibility('instructions')">
+	    Instructions
+	  </button>	
+	  <div id="footer">
+	    This game will work in Firefox, Chrome, Safari, and Opera (Not Internet Explorer)
+	  </div>
+	</div>
+	
+	<div id="instructions" class="hidden">
+	  <div class="title">
+	    Instructions
+	  </div>
+	  <div id="instructionsText">
+	    The object of this game is to get to the top of the course while avoiding the obstacles.
+		There are two other horses who have already completed this course: try to beat their times!
+		Use the arrows keys to move your horse. Press the escape key to pause the game.
+		Here are the obstacles you are trying to avoid: <br><br>
+		<img id="ob1" src="Images/boulder.png" alt="boulder">
+		<img id="ob2" src="Images/plasticBag.png" alt="plastic bag">
+		<img id="ob3" src="Images/dog.gif" alt="dog">
+		<img id="ob4" src="Images/puddle.png" alt="mud puddle">
+	  </div>
+      <button id="toMenu" class="button" onClick="changeVisibility('instructions'), changeVisibility('menu')">
+	    Back to Menu
+	  </button>	  
+	</div>
+	
+	<div id="chooseHorse" class="hidden">
+	  <div class="title">
+	    Choose Horse
+	  </div>
+	  <img id="horse1" class="horseImage" src="Images/horseSprite1.png" alt="brown horse" onClick="getHorse('horseSprite1')">
+	  <img id="horse2" class="horseImage" src="Images/horseSprite2.png" alt="red horse" onClick="getHorse('horseSprite2')">
+	  <img id="horse3" class="horseImage" src="Images/horseSprite3.png" alt="blue horse" onClick="getHorse('horseSprite3')">
+	  <img id="horse4" class="horseImage" src="Images/horseSprite4.png" alt="yellow horse" onClick="getHorse('horseSprite4')">
+	  <img id="horse5" class="horseImage" src="Images/horseSprite5.png" alt="pink horse" onClick="getHorse('horseSprite5')">
+	</div>
+	
+	<div id="chooseDifficulty" class="hidden">
+	  <div class="title">
+	    Choose Difficulty
+	  </div>
+	  <button id="difficulty1" class="button" onClick="getDifficultySpeed(200)">
+	    Easy
+	  </button>
+	  <button id="difficulty2" class="button" onClick="getDifficultySpeed(100)">
+	    Medium
+	  </button>
+	  <button id="difficulty3" class="button" onClick="getDifficultySpeed(50)">
+	    Hard
+	  </button>
+	  <button id="difficulty4" class="button" onClick="getDifficultySpeed(1)">
+	    Insane!
+	  </button>
+	</div>
+	
+	<div id="course" class="hidden">
+	  <div id="box">
+	  </div>
+	  <div id="times">
+	    Times to beat: <br>
+	  </div>
+	  <div id="timer">
+	    Your time: <br>
+	  </div>
+	  <div id="horse">
+	  </div>
+	  <div id="lightbox" class="hidden">
+	    <h1>PAUSED</h1>
+		<button id="restart" class="button" onClick="restartGame()">
+	      Restart
+	    </button>
+		<button id="backToMenu" class="button" onClick="backToMenu()">
+	      Back to Menu
+	    </button>
+	  </div>
+	</div>
+	
+	<div id="results" class="hidden">
+	  <div id="result">
+	  </div>
+	  <button type="button" id="anotherRace" onClick="raceAgain()">
+	    Main Menu
+	  </button>
+	</div>
+  </body>
+</html>

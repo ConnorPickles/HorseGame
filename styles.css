@@ -1,0 +1,306 @@
+/* Id's */
+
+#horse {
+  position:absolute;
+  background-repeat:no-repeat;
+  background-position:center;
+  height:60px;
+  width:30px;
+} 
+
+#box {
+  position:absolute;
+  left:9px;
+  top:9px;
+  border:thick solid black;
+  height:900px;
+  width:300px;
+  text-align:center;
+  background-image:url(Images/raceBackground.jpg);
+}
+
+#lightbox {
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color:rgba(0,0,0,.5);
+  height:100%;
+  width:100%;
+  padding-left:100px;
+  padding-top:300px;
+  z-index:2;
+  color:white;
+}
+
+#times {
+  background-color:black;
+  color:red;
+  font-family:"Arial, sans-serif";
+  font-size:27px;
+  position:absolute;
+  top:10px;
+  left:325px;
+  padding:10px;
+} 
+
+#timer {
+  background-color:black;
+  color:red;
+  font-family:"Arial, sans-serif";
+  font-size:27px;
+  position:absolute;
+  top:150px;
+  left:325px;
+  padding:10px;
+}
+
+#results {
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(Images/background.jpg);
+  height:500px;
+  width:500px;
+  border:thick solid green;
+}
+
+#result {
+  position:relative;
+  top:50px;
+  height:300px;
+  width:500px;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+#anotherRace {
+  position:relative;
+  background-color:grey;
+  width:250px;
+  height:50px;
+  top:100px;
+  left:112px;
+  border-radius:3px;
+  margin-left:17px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+#menu {
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(Images/background.jpg);
+  height:500px;
+  width:500px;
+  border:thick solid green;
+}
+
+#footer {
+  color:white;
+  position:relative;
+  top:330px;
+  font-size:15pt;
+  text-align:center;
+  width:500px;
+}
+
+#instructions {
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(Images/background.jpg);
+  height:500px;
+  width:500px;
+  border:thick solid green;
+}
+
+#instructionsText {
+  position:relative;
+  color:white;
+  font-size:15pt;
+  top:100px;
+  padding:20px;
+}
+
+#toMenu {
+  position:relative;
+  top:170px;
+  left:100px;
+}
+
+#ob1 {
+  position:relative;
+  left:0px;
+}
+
+#ob2 {
+  position:relative;
+  left:30px;
+}
+
+#ob3 {
+  position:relative;
+  left:60px;
+}
+
+#ob4 {
+  position:relative;
+  left:90px;
+}
+
+#chooseHorse {
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(Images/background.jpg);
+  height:500px;
+  width:500px;
+  border:thick solid green;
+} 
+
+#horse1 {
+  left:70px;
+  top:130px;
+}
+
+#horse2 {
+  left:350px;
+  top:130px;
+}
+
+#horse3 {
+  left:-20px;
+  top:300px;
+}
+
+#horse4 {
+  left:265px;
+  top:300px;
+}
+
+#horse5 {
+  left:60px;
+  top:230px;
+}
+
+#chooseDifficulty {
+  position:relative;
+  background-image:url(Images/background.jpg);
+  height:500px;
+  width:500px;
+  border:thick solid green;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#playGame {
+  top:130px;
+  left:100px;
+}
+
+#restart {
+  position:relative;
+  left:-80px;
+}
+
+#backToMenu  {
+  position:relative;
+  left:-350px;
+  top:70px;
+}
+
+#showInstructions {
+  top:150px;
+  left:100px;
+}
+
+#difficulty1 {
+  top:130px;
+  left:100px;
+}
+
+#difficulty2 {
+  top:150px;
+  left:100px;
+}
+
+#difficulty3 {
+  top:170px;
+  left:100px;
+}
+
+#difficulty4 {
+  top:190px;
+  left:100px;
+}
+
+/* End of Id's */
+
+
+/* Classes */
+
+.button {
+  position:relative;
+  background-color:grey;
+  width:250px;
+  height:50px;
+  border-radius:3px;
+  margin-left:17px;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.title {
+  position:relative;
+  text-align:center;
+  font:40pt aldhabi, serif;
+  color:white;
+  height:10px;
+  top:20px;
+}
+
+.horseImage {
+  cursor:pointer;
+  position:relative;
+}
+
+.hidden {
+  display:none;
+}
+
+.visible {
+  display:block;
+}
+
+.obstacle1 {
+  position:absolute;
+  background-image:url(Images/boulder.png);
+  height:30px;
+  width:30px;
+}
+
+.obstacle2 {
+  position:absolute;
+  background-image:url(Images/plasticBag.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  height:30px;
+  width:30px;
+}
+
+.obstacle3 {
+  position:absolute;
+  background-image:url(Images/dog.gif);
+  background-repeat:no-repeat;
+  background-position:center;
+  height:30px;
+  width:30px;
+}
+
+.obstacle4 {
+  position:absolute;
+  background-image:url(Images/puddle.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  height:30px;
+  width:30px;
+}
+
+/* End of Classes */
